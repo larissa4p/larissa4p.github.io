@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# larissa-bessa.dev
 
-## Getting Started
+Site de apresentação de serviços freelance — WordPress, landing pages e automações WhatsApp. Construído do zero, sem template, sem page builder.
 
-First, run the development server:
+**[larissabessa.dev](https://larissabessa.dev)** · [larissa4p](https://github.com/larissa4p)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Stack
+
+| Tecnologia | Uso |
+|---|---|
+| Next.js 16 (App Router) | Framework principal, SSR/SSG |
+| TypeScript | Tipagem estrita em todos os componentes |
+| Tailwind CSS v4 | Estilização utility-first |
+| Framer Motion | Animações de entrada e interações |
+| next/font | Syne + Inter + DM Mono — zero layout shift |
+
+## Destaques técnicos
+
+- **Animações com `whileInView`** — cada seção entra com fade + slide ao scrollar, usando `IntersectionObserver` via Framer Motion para não animar fora da viewport
+- **FAQ com `AnimatePresence`** — accordion com animação de altura suave no open/close
+- **Nav adaptativa** — blur com `backdrop-filter` ativado apenas após scroll, sem flicker
+- **Mobile-first** — paddings e fontes com `clamp()` e breakpoints responsivos em toda a UI
+- **Tokens CSS** — paleta definida em custom properties no `globals.css`, consistência garantida
+
+## Estrutura
+
+```
+app/
+├── layout.tsx       # Fontes via next/font, metadata OpenGraph, lang pt-BR
+├── page.tsx         # Composição das seções em ordem
+└── globals.css      # Tokens de cor, reset, animação blink
+
+components/
+├── AnimateIn.tsx    # Wrapper reutilizável: fade+slide whileInView
+├── Nav.tsx          # Sticky nav com blur-on-scroll, responsivo
+├── Hero.tsx         # Headline animado, CTAs, stat pills
+├── Fronts.tsx       # Badges — frentes que o serviço resolve
+├── WhyMe.tsx        # 4 diferenciais com stagger animation
+├── Comparison.tsx   # Comparativo antes/depois em 2 colunas
+├── Process.tsx      # Timeline de 4 passos com linha conectora
+├── Projects.tsx     # 3 projetos destaque com cards
+├── About.tsx        # Bio + grid de stats
+├── FAQ.tsx          # Accordion com AnimatePresence
+└── Footer.tsx       # CTA final com WhatsApp + rodapé
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Rodando local
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+# abre em http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy
 
-## Learn More
+Vercel — deploy automático via push no `master`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido por [Larissa Bessa](https://github.com/larissa4p) · Brasília, BR
