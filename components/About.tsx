@@ -40,9 +40,7 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { n: "5", label: "anos de experiência" },
-                { n: "23+", label: "projetos entregues" },
-                { n: "900+", label: "listagens no MTEC" },
-                { n: "0", label: "page builders usados" },
+                { n: "23", label: "projetos entregues" },
               ].map((s) => (
                 <div key={s.label} className="p-5 rounded-2xl bg-[#0c1810] border border-[#162b1c]">
                   <p className="text-3xl font-black text-[#22c55e] mb-1" style={{ fontFamily: "var(--font-syne)" }}>{s.n}</p>

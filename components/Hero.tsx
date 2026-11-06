@@ -72,7 +72,7 @@ export default function Hero() {
 
           {/* Stats */}
           <div className="flex flex-wrap gap-3 pt-2">
-            {["5 anos de experiência", "23+ projetos entregues", "Código sem page builder"].map((s) => (
+            {["5 anos de experiência", "23 projetos entregues", "Código sem page builder"].map((s) => (
               <span
                 key={s}
                 className="text-[10px] px-3 py-1.5 rounded-full bg-[#0c1810] border border-[#162b1c] text-[#4d7a60] font-[family-name:var(--font-dm-mono)]"
