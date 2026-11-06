@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className="py-16 md:py-28 border-t border-[#162b1c]">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
           <AnimateIn>
             <p className="text-[10px] text-[#22c55e] tracking-widest uppercase mb-4" style={{ fontFamily: "var(--font-dm-mono)" }}>
               Quem faz
@@ -40,7 +40,7 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { n: "5", label: "anos de experiência" },
-                { n: "15+", label: "projetos entregues" },
+                { n: "23+", label: "projetos entregues" },
                 { n: "900+", label: "listagens no MTEC" },
                 { n: "0", label: "page builders usados" },
               ].map((s) => (

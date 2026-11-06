@@ -32,7 +32,7 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-16 md:py-28 border-t border-[#162b1c]">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-[1fr_1.4fr] gap-16">
+        <div className="grid md:grid-cols-[1fr_1.4fr] gap-8 md:gap-16">
           <AnimateIn>
             <p className="text-[10px] text-[#22c55e] tracking-widest uppercase mb-4" style={{ fontFamily: "var(--font-dm-mono)" }}>
               FAQ

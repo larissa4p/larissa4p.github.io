@@ -11,8 +11,8 @@ export default function Footer() {
               Próximo passo
             </p>
             <h2
-              className="font-black text-[#edfaf2] uppercase tracking-tighter leading-[0.9] mb-6"
-              style={{ fontFamily: "var(--font-syne)", fontSize: "clamp(1.9rem, 7vw, 6rem)" }}
+              className="font-black text-[#edfaf2] uppercase tracking-tight leading-none mb-6"
+              style={{ fontFamily: "var(--font-syne)", fontSize: "clamp(1.6rem, 6.5vw, 6rem)" }}
             >
               Vamos colocar seu<br />
               <span style={{ color: "transparent", WebkitTextStroke: "2px #22c55e" }}>projeto no ar?</span>

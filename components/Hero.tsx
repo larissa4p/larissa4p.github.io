@@ -33,7 +33,7 @@ export default function Hero() {
           transition={{ duration: 0.7, ease, delay: 0.1 }}
         >
           <h1
-            className="font-black leading-[0.88] tracking-tighter uppercase mb-4 text-[clamp(2.4rem,8vw,8rem)] font-[family-name:var(--font-syne)]"
+            className="font-black leading-[0.9] tracking-tight uppercase mb-4 text-[clamp(1.8rem,6.5vw,8rem)] font-[family-name:var(--font-syne)]"
           >
             <span className="block text-[#edfaf2]">Sites que vendem.</span>
             <span className="block text-transparent" style={{ WebkitTextStroke: "2px #22c55e" }}>
@@ -72,7 +72,7 @@ export default function Hero() {
 
           {/* Stats */}
           <div className="flex flex-wrap gap-3 pt-2">
-            {["5 anos de experiência", "15+ projetos entregues", "Código sem page builder"].map((s) => (
+            {["5 anos de experiência", "23+ projetos entregues", "Código sem page builder"].map((s) => (
               <span
                 key={s}
                 className="text-[10px] px-3 py-1.5 rounded-full bg-[#0c1810] border border-[#162b1c] text-[#4d7a60] font-[family-name:var(--font-dm-mono)]"

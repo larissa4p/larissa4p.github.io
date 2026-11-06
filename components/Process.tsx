@@ -23,7 +23,7 @@ export default function Process() {
         </AnimateIn>
 
         <motion.div
-          className="grid md:grid-cols-4 gap-6 overflow-hidden"
+          className="grid md:grid-cols-4 gap-6"
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12 } } }}
           initial="hidden"
           whileInView="show"
