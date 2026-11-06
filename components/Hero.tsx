@@ -32,11 +32,10 @@ export default function Hero() {
         >
           <h1
             className="font-black leading-[0.9] tracking-tighter uppercase text-[#edfaf2] mb-4"
-            style={{ fontFamily: "var(--font-syne)", fontSize: "clamp(2.2rem, 10vw, 8rem)" }}
+            style={{ fontFamily: "var(--font-syne)", fontSize: "clamp(1.9rem, 9vw, 8rem)" }}
           >
-            Sites que vendem.<br />
-            <span style={{ color: "transparent", WebkitTextStroke: "2px #22c55e" }}>Automações que</span><br />
-            <span style={{ color: "transparent", WebkitTextStroke: "2px #22c55e" }}>atendem.</span>
+            Sites que<br />vendem.<br />
+            <span style={{ color: "transparent", WebkitTextStroke: "2px #22c55e" }}>Automações<br />que atendem.</span>
           </h1>
         </motion.div>
 
