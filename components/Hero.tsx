@@ -33,10 +33,10 @@ export default function Hero() {
           transition={{ duration: 0.7, ease, delay: 0.1 }}
         >
           <h1
-            className="font-black leading-[0.88] tracking-tighter uppercase text-[#edfaf2] mb-4 max-w-[14ch] text-[clamp(2.4rem,8vw,8rem)] font-[family-name:var(--font-syne)]"
+            className="font-black leading-[0.88] tracking-tighter uppercase mb-4 text-[clamp(2.4rem,8vw,8rem)] font-[family-name:var(--font-syne)]"
           >
-            Sites que vendem.{" "}
-            <span className="[-webkit-text-stroke:2px_#22c55e] text-transparent">
+            <span className="block text-[#edfaf2]">Sites que vendem.</span>
+            <span className="block text-transparent" style={{ WebkitTextStroke: "2px #22c55e" }}>
               Automações que atendem.
             </span>
           </h1>
