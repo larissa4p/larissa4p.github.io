@@ -31,7 +31,7 @@ export default function Footer() {
                 Chamar no WhatsApp →
               </a>
               <a
-                href="https://github.com/larissa4p"
+                href="https://portfolio-larissa4p.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3.5 rounded-2xl bg-[#0c1810] border border-[#162b1c] text-[#4d7a60] hover:border-[#22c55e]/40 hover:text-[#22c55e] transition-all"
