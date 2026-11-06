@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import AnimateIn from "./AnimateIn";
 
 const fronts = [
@@ -19,18 +20,24 @@ export default function Fronts() {
             O que um site bem feito resolve de uma vez
           </p>
         </AnimateIn>
-        <div className="flex flex-wrap gap-3">
-          {fronts.map((f, i) => (
-            <AnimateIn key={f} delay={i * 0.05}>
-              <span
-                className="px-5 py-3 rounded-full border border-[#162b1c] text-sm font-bold text-[#edfaf2] bg-[#0c1810] uppercase tracking-wider hover:border-[#22c55e]/30 hover:text-[#22c55e] transition-all duration-300 cursor-default"
-                style={{ fontFamily: "var(--font-syne)" }}
-              >
-                {f}
-              </span>
-            </AnimateIn>
+        <motion.div
+          className="flex flex-wrap gap-3"
+          variants={{ hidden: {}, show: { transition: { staggerChildren: 0.07 } } }}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-40px" }}
+        >
+          {fronts.map((f) => (
+            <motion.span
+              key={f}
+              variants={{ hidden: { opacity: 0, y: 10 }, show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.21, 0.47, 0.32, 0.98] } } }}
+              className="px-5 py-3 rounded-full border border-[#162b1c] text-sm font-bold text-[#edfaf2] bg-[#0c1810] uppercase tracking-wider hover:border-[#22c55e]/30 hover:text-[#22c55e] transition-all duration-300 cursor-default"
+              style={{ fontFamily: "var(--font-syne)" }}
+            >
+              {f}
+            </motion.span>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
