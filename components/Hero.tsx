@@ -5,7 +5,7 @@ const ease = [0.21, 0.47, 0.32, 0.98] as const;
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-16">
+    <section className="relative min-h-screen flex items-center pt-16 overflow-x-hidden">
       {/* glow isolado — overflow-hidden só aqui, não na section */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0" style={{
@@ -33,7 +33,7 @@ export default function Hero() {
           transition={{ duration: 0.7, ease, delay: 0.1 }}
         >
           <h1
-            className="font-black leading-[0.9] tracking-tight uppercase mb-4 text-[clamp(1.8rem,6.5vw,8rem)] font-[family-name:var(--font-syne)]"
+            className="font-black leading-[0.95] tracking-tight uppercase mb-4 text-[clamp(1.1rem,5.5vw,8rem)] font-[family-name:var(--font-syne)]"
           >
             <span className="block text-[#edfaf2]">Sites que vendem.</span>
             <span className="block text-transparent" style={{ WebkitTextStroke: "2px #22c55e" }}>
